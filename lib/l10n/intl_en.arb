@@ -1,0 +1,24 @@
+{
+  "app_name": "Almaha Caffe",
+  "change_language": "Change Language",
+  "home": "Home",
+  "log_out": "LogOut",
+  "please_enter_pass": "Please enter password",
+  "please_enter_email": "Please enter Username",
+  "password": "Password",
+  "email": "Email",
+  "user_name": "UserName",
+  "log_in": "Login",
+  "sign_up": "Create Account",
+  "my_orders": "MyOrders",
+  "about_us": "About Us",
+  "contac_us": "Contact Us",
+  "my_cart": "Cart",
+  "add_to_cart": "Add to Cart",
+  "remove": "Remove",
+  "currency": "SAR"
+
+
+
+
+}
