@@ -25,8 +25,8 @@ class LoginPage extends StatelessWidget {
         child: Form(
           child:
           Stack(children: [
-           Container(height:double.infinity,child:
-           Image.asset("images/splash.jpg",fit: BoxFit.fill,),),
+           Container(height: MediaQuery.of(context).size.height,child:
+           Image.asset("images/splash.jpg",fit: BoxFit.fitHeight,),),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
