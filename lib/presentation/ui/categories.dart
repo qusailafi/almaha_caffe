@@ -1,6 +1,8 @@
 import 'package:almaha_app/cahce_manger/cache_data.dart';
 import 'package:almaha_app/presentation/controlers/categories/categories_binding.dart';
 import 'package:almaha_app/presentation/controlers/language/language_controler.dart';
+import 'package:almaha_app/presentation/ui/about_us/abous_us.dart';
+import 'package:almaha_app/presentation/ui/contact_us/contact_us.dart';
 import 'package:almaha_app/presentation/ui/orders/my_orders.dart';
 import 'package:almaha_app/presentation/ui/products/cart.dart';
 import 'package:almaha_app/presentation/ui/products/products.dart';
@@ -83,8 +85,17 @@ class Home extends StatelessWidget {
                       fontSize: Helper.smallfont, color: ColorHelper.brown),
                 ),
                 onTap: () {
-                  languageControler.setLang(context);
-                  Get.to(Home());
+                   Get.to(AboutUsWebView());
+                },
+              ),
+              ListTile(
+                title: Text(
+                  S.of(context).contac_us,
+                  style: TextStyle(
+                      fontSize: Helper.smallfont, color: ColorHelper.brown),
+                ),
+                onTap: () {
+                  Get.to(ContactUsPage());
                 },
               ),
               ListTile(
