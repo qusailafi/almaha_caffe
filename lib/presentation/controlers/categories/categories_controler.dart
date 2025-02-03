@@ -21,10 +21,10 @@ getData()async{
   GeneralResponse response= await useCase.execute();
 try{
   if (List<String>.from(json.decode(response.data)).length > 0) {
-    categories.add("المشروبات الساخنة");
-    categories.add("المشروبات الباردة");
+    // categories.add("المشروبات الساخنة");
+    // categories.add("المشروبات الباردة");
 
-    // categories.addAll(List<String>.from(json.decode(response.data)));
+    categories.addAll(List<String>.from(json.decode(response.data)));
   } else {
     message.value = "No Categories Avilable";
   }

@@ -1,9 +1,9 @@
 
 
-import 'package:almaha_app/data/request_manger.dart';
 
 import '../../domain/model/general_response.dart';
 import '../../utils/utils.dart';
+import '../remote/request_manger.dart';
 
 class ProductsDataSource extends NetWorkCalls{
   Future<GeneralResponse>fetchProducts(   ) async{

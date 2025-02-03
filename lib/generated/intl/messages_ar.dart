@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "الرجاء ادخال البريد الالكتروني "),
         "please_enter_pass":
             MessageLookupByLibrary.simpleMessage("الرجاء ادخال الرقم السري"),
+        "price": MessageLookupByLibrary.simpleMessage("السعر"),
         "remove": MessageLookupByLibrary.simpleMessage("حذف"),
         "sign_up": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
         "user_name": MessageLookupByLibrary.simpleMessage("اسم المستخدم")

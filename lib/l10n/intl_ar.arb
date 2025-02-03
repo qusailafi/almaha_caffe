@@ -17,7 +17,8 @@
   "my_cart": "السلة",
   "add_to_cart": "آضف للسلة",
   "remove": "حذف",
-  "currency": "ر.س"
+  "currency": "ر.س",
+  "price": "السعر"
 
 
 }

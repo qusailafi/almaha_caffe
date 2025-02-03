@@ -16,7 +16,8 @@
   "my_cart": "Cart",
   "add_to_cart": "Add to Cart",
   "remove": "Remove",
-  "currency": "SAR"
+  "currency": "SAR",
+  "price": "price"
 
 
 

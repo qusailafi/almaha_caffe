@@ -27,4 +27,8 @@ class Utils{
 
 
   }
+
+  static String getImgePath(String imgName){
+    return "images/"+imgName;
+  }
 }

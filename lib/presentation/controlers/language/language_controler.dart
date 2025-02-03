@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 
-import 'package:almaha_app/cahce_manger/cache_data.dart';
+import 'package:almaha_app/data/local/cache_data.dart';
 import 'package:almaha_app/presentation/ui/splash.dart';
  import 'package:almaha_app/utils/utils.dart';
 import 'package:flutter/cupertino.dart';

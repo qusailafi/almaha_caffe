@@ -1,8 +1,8 @@
  import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:http/http.dart' as http;
 
-import '../domain/model/general_response.dart';
-import '../utils/utils.dart';
+import '../../domain/model/general_response.dart';
+import '../../utils/utils.dart';
 
 class NetWorkCalls {
   Future<GeneralResponse> getApi(String apiName) async {
@@ -38,7 +38,7 @@ class NetWorkCalls {
 
 
 
-  Future<GeneralResponse> postApi(String apiName,Map    <String,String>?headers ,Map  <String,dynamic>?body) async {
+  Future<GeneralResponse> postApi(String apiName,Map<String,String>?headers,Map  <String,dynamic>?body) async {
     GeneralResponse generalResponse =
     GeneralResponse(  message: "", data: "");
     dynamic jsonResponse = null;

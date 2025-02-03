@@ -10,6 +10,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../generated/l10n.dart';
+import '../../../utils/utils.dart';
 
 class LoginPage extends StatelessWidget {
   TextEditingController _emailController = TextEditingController();
@@ -26,7 +27,7 @@ class LoginPage extends StatelessWidget {
           child:
           Stack(children: [
            Container(height: MediaQuery.of(context).size.height,child:
-           Image.asset("images/splash.jpg",fit: BoxFit.fitHeight,),),
+           Image.asset(Utils.getImgePath("splash.jpg"),fit: BoxFit.fitHeight,),),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

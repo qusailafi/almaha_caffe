@@ -1,13 +1,12 @@
 import 'dart:async';
 
-import 'package:almaha_app/presentation/controlers/splash_controler.dart';
-import 'package:almaha_app/presentation/ui/auth/login_screen.dart';
-import 'package:almaha_app/presentation/ui/categories.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import '../../utils/utils.dart';
 import '../controlers/language/language_controler.dart';
 
 class SplashPage extends StatefulWidget {
@@ -30,7 +29,7 @@ controler.isLogined();
   Widget build(BuildContext context) {
 
     return Container(
-      child: Image.asset("images/splash.jpg",fit: BoxFit.cover,),
+      child: Image.asset(Utils.getImgePath("splash.jpg"),fit: BoxFit.cover,),
     );
   }
 }

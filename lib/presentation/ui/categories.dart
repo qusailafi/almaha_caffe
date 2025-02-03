@@ -1,4 +1,3 @@
-import 'package:almaha_app/cahce_manger/cache_data.dart';
 import 'package:almaha_app/presentation/controlers/categories/categories_binding.dart';
 import 'package:almaha_app/presentation/controlers/language/language_controler.dart';
 import 'package:almaha_app/presentation/ui/about_us/abous_us.dart';
@@ -6,21 +5,16 @@ import 'package:almaha_app/presentation/ui/contact_us/contact_us.dart';
 import 'package:almaha_app/presentation/ui/orders/my_orders.dart';
 import 'package:almaha_app/presentation/ui/products/cart.dart';
 import 'package:almaha_app/presentation/ui/products/products.dart';
-import 'package:almaha_app/presentation/ui/splash.dart';
 import 'package:almaha_app/utils/color_helper.dart';
 import 'package:almaha_app/utils/font_helper.dart';
-
+import 'package:almaha_app/utils/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../generated/l10n.dart';
 import '../../widgets/card_widget.dart';
 import '../controlers/categories/categories_controler.dart';
-
 class Home extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context)   {
     CategoriesBinding().dependencies();
@@ -41,7 +35,7 @@ class Home extends StatelessWidget {
               DrawerHeader(
                 child: Container(
                   child: Image.asset(
-                    'images/menu.png',
+                    Utils.getImgePath("menu.png"),
                     fit: BoxFit.scaleDown,
                   ),
                 ),
@@ -120,7 +114,7 @@ class Home extends StatelessWidget {
             return CircularProgressIndicator();
           } else if (controler.categories.isNotEmpty) {
             return ListView.builder(
-              itemCount: 2,
+              itemCount: controler.categories.value.length,
               itemBuilder: (BuildContext context, int index) {
                 return InkWell(
                   onTap: () {
