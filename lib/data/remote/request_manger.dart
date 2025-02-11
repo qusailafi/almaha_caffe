@@ -49,13 +49,12 @@ class NetWorkCalls {
           generalResponse.message =controler.errorMsg.value;
         }
         else {
-          controler.getErrorMsg(ErrorType.none);
+
           generalResponse.data = "";
-          generalResponse.message = controler.errorMsg.value;
+          generalResponse.message =  S.of(controler.context).change_language;;
         }
       } else {
-        controler.getErrorMsg(ErrorType.noInternet);
-        generalResponse.message =controler.errorMsg.value;
+         generalResponse.message = S.of(controler.context).no_internet;;
       }
     } catch (e) {
       generalResponse.data = "";
@@ -105,12 +104,10 @@ class NetWorkCalls {
 
         else {
           generalResponse.data = "";
-          controler.getErrorMsg(ErrorType.none);
-          generalResponse.message = controler.errorMsg.value;
+           generalResponse.message = S.of(controler.context).change_language;
         }
       } else {
-        controler.getErrorMsg(ErrorType.noInternet);
-        generalResponse.message =controler.errorMsg.value;
+         generalResponse.message = S.of(controler.context).no_internet;;
       }
     } catch (e) {
       generalResponse.data = "";

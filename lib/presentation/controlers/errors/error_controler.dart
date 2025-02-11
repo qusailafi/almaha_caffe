@@ -20,13 +20,7 @@ late BuildContext context;
       errorMsg.value = S.of(context).not_found_api;
 
     }
-    else if (error == ErrorType.noInternet) {
-      errorMsg.value = S.of(context).no_internet;
 
-    }
-    else {
-      errorMsg.value = S.of(context).my_orders;
-    }
     return errorMsg.value;
   }
 }
