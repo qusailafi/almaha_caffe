@@ -34,6 +34,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "log_out": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "my_cart": MessageLookupByLibrary.simpleMessage("السلة"),
         "my_orders": MessageLookupByLibrary.simpleMessage("طلباتي"),
+        "no_internet":
+            MessageLookupByLibrary.simpleMessage("مشكله في الانترنت"),
+        "not_found_api": MessageLookupByLibrary.simpleMessage("غير متوفرة"),
         "password": MessageLookupByLibrary.simpleMessage("الرقم السري"),
         "please_enter_email": MessageLookupByLibrary.simpleMessage(
             "الرجاء ادخال البريد الالكتروني "),

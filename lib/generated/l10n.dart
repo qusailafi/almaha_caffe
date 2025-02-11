@@ -239,6 +239,26 @@ class S {
       args: [],
     );
   }
+
+  /// `NoInternet`
+  String get no_internet {
+    return Intl.message(
+      'NoInternet',
+      name: 'no_internet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `NotFound`
+  String get not_found_api {
+    return Intl.message(
+      'NotFound',
+      name: 'not_found_api',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

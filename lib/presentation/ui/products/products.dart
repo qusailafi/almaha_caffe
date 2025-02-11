@@ -1,5 +1,6 @@
 
 
+import 'package:almaha_app/presentation/base/base_state_less.dart';
 import 'package:almaha_app/presentation/controlers/product/product_binding.dart';
 import 'package:almaha_app/presentation/controlers/product/product_controler.dart';
 import 'package:almaha_app/presentation/ui/products/details.dart';
@@ -13,7 +14,7 @@ import '../../../generated/l10n.dart';
 import '../../controlers/categories/categories_controler.dart';
 import 'cart.dart';
 
-class ProductsScreen extends StatelessWidget{
+class ProductsScreen extends BaseStateLess{
   @override
   Widget build(BuildContext context) {
     ProductBinding().dependencies();

@@ -35,6 +35,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "log_out": MessageLookupByLibrary.simpleMessage("LogOut"),
         "my_cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "my_orders": MessageLookupByLibrary.simpleMessage("MyOrders"),
+        "no_internet": MessageLookupByLibrary.simpleMessage("NoInternet"),
+        "not_found_api": MessageLookupByLibrary.simpleMessage("NotFound"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "please_enter_email":
             MessageLookupByLibrary.simpleMessage("Please enter Username"),

@@ -5,7 +5,7 @@ import '../remote/request_manger.dart';
 
 class CategoryDataSource extends NetWorkCalls{
   Future<GeneralResponse>fetchCategories() async{
-return  await getApi(Utils.GET_CATEGORIES);
+return  await getApi(Utils.GET_CATEGORIES,null);
 
   }
 }

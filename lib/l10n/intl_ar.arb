@@ -18,7 +18,9 @@
   "add_to_cart": "آضف للسلة",
   "remove": "حذف",
   "currency": "ر.س",
-  "price": "السعر"
+  "price": "السعر",
+  "no_internet": "مشكله في الانترنت",
+  "not_found_api": "غير متوفرة"
 
 
 }

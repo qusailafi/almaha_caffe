@@ -1,6 +1,7 @@
 import 'dart:async';
 
 
+import 'package:almaha_app/presentation/controlers/errors/error_controler.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,9 +18,12 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashState extends State<SplashPage> {
-@override
+   late NetWorkErrorControler netWorkErrorControler;
+
+  @override
   void initState() {
      super.initState();
+     netWorkErrorControler    =Get.find<NetWorkErrorControler>();
     CacheControler controler = Get.find( );
 controler.isLogined();
 }
@@ -27,8 +31,8 @@ controler.isLogined();
 
   @override
   Widget build(BuildContext context) {
-
-    return Container(
+    netWorkErrorControler.context=context;
+      return Container(
       child: Image.asset(Utils.getImgePath("splash.jpg"),fit: BoxFit.cover,),
     );
   }

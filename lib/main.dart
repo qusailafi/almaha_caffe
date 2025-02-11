@@ -1,4 +1,5 @@
- import 'package:almaha_app/presentation/controlers/language/language_controler.dart';
+ import 'package:almaha_app/presentation/controlers/errors/error_controler.dart';
+import 'package:almaha_app/presentation/controlers/language/language_controler.dart';
 
 import 'package:almaha_app/presentation/ui/splash.dart';
 import 'package:flutter/material.dart';
@@ -13,12 +14,14 @@ import 'generated/l10n.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   CacheControler controler = Get.put(CacheControler());
+NetWorkErrorControler netWorkErrorControler=Get.put(NetWorkErrorControler());
   await controler.loadLang();
    runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   CacheControler controler = Get.find<CacheControler>();
+  NetWorkErrorControler netWorkErrorControler=Get.find<NetWorkErrorControler>( );
 
   @override
   Widget build(BuildContext context) {

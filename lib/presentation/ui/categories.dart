@@ -1,6 +1,8 @@
 import 'package:almaha_app/presentation/controlers/categories/categories_binding.dart';
+import 'package:almaha_app/presentation/controlers/errors/error_controler.dart';
 import 'package:almaha_app/presentation/controlers/language/language_controler.dart';
 import 'package:almaha_app/presentation/ui/about_us/abous_us.dart';
+import 'package:almaha_app/presentation/base/base_state_less.dart';
 import 'package:almaha_app/presentation/ui/contact_us/contact_us.dart';
 import 'package:almaha_app/presentation/ui/orders/my_orders.dart';
 import 'package:almaha_app/presentation/ui/products/cart.dart';
@@ -14,13 +16,14 @@ import 'package:get/get.dart';
 import '../../generated/l10n.dart';
 import '../../widgets/card_widget.dart';
 import '../controlers/categories/categories_controler.dart';
-class Home extends StatelessWidget {
+class Home extends BaseStateLess {
   @override
   Widget build(BuildContext context)   {
     CategoriesBinding().dependencies();
     final CategoriesControler controler = Get.find<CategoriesControler>();
     final CacheControler languageControler = Get.find<CacheControler>();
-
+NetWorkErrorControler netWorkErrorControler=Get.find<NetWorkErrorControler>();
+netWorkErrorControler.context=context;
     Get.updateLocale(Locale(languageControler.local.value));
     return Scaffold(
       appBar: AppBar(
